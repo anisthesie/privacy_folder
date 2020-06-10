@@ -3,20 +3,25 @@
 #include <iostream>
 #include <vector>
 #include <thread>
+#include <fstream>
+
+#include <direct.h>
 
 #include "common.h"
 
 extern char* USER_HOME;
 
 class CrossProcessMessage {
+
 private: 
-	std::thread waiting_for_confirmation;
+	std::thread confirmation_thread;
 	std::string message;
+	std::string title;
 
 public:
-	CrossProcessMessage(std::string message);
+	CrossProcessMessage(const std::string& title, const std::string& message);
 	void send();
 };
 
-//void wait_for_confirmation();
+void wait_for_confirmation();
 //std::thread waiting_for_confirmation;
