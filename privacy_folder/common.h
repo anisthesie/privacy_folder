@@ -1,7 +1,13 @@
 #pragma once
 #include <iostream>
 
+#define CONFIG_DIRECTORY "\\privacy_folder"
+#define CONFIG_FILE "\\directories.pfr"
+
+typedef unsigned char byte;
+
 extern char* USER_HOME;
+
 
 inline void init_user_home() { // https://stackoverflow.com/a/2552458
 	USER_HOME = getenv("HOMEDRIVE");
@@ -13,12 +19,6 @@ inline void init_user_home() { // https://stackoverflow.com/a/2552458
 inline bool file_exists(const std::string& name) { //https://stackoverflow.com/a/12774387
 	struct stat buffer;
 	return (stat(name.c_str(), &buffer) == 0);
-}
-
-inline bool message_already_in_queue() {
-	std::string path(USER_HOME);
-	path.append("\\privacy_folder\\current_message.cpm");
-	return file_exists(path);
 }
 
 inline void error(const char* str) {

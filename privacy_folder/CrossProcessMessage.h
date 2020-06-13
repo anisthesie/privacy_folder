@@ -24,4 +24,5 @@ public:
 };
 
 void wait_for_confirmation();
+inline bool message_already_in_queue();
 //std::thread waiting_for_confirmation;

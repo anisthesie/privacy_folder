@@ -35,3 +35,9 @@ void wait_for_confirmation() {
 		}
 	}
 }
+inline bool message_already_in_queue() {
+	std::string path(USER_HOME);
+	path.append(CONFIG_DIRECTORY);
+	path.append(CONFIG_FILE);
+	return file_exists(path);
+}

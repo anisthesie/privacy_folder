@@ -39,6 +39,12 @@
     <ClCompile Include="operation_handler.cc">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="config_file.cpp">
+      <Filter>Fichiers sources\io</Filter>
+    </ClCompile>
+    <ClCompile Include="encryption_worker.cc">
+      <Filter>Fichiers sources\io</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Folder.h">
@@ -47,11 +53,17 @@
     <ClInclude Include="CrossProcessMessage.h">
       <Filter>Fichiers d%27en-tête\cpm</Filter>
     </ClInclude>
-    <ClInclude Include="common.h">
-      <Filter>Fichiers d%27en-tête\io</Filter>
-    </ClInclude>
     <ClInclude Include="operation_handler.h">
       <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="config_file.h">
+      <Filter>Fichiers d%27en-tête\io</Filter>
+    </ClInclude>
+    <ClInclude Include="encryption_worker.h">
+      <Filter>Fichiers d%27en-tête\io</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

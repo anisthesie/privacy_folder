@@ -123,14 +123,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="config_file.cpp" />
     <ClCompile Include="CrossProcessMessage.cpp" />
+    <ClCompile Include="encryption_worker.cc" />
     <ClCompile Include="Folder.cpp" />
     <ClCompile Include="main.cc" />
     <ClCompile Include="operation_handler.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.h" />
+    <ClInclude Include="config_file.h" />
     <ClInclude Include="CrossProcessMessage.h" />
+    <ClInclude Include="encryption_worker.h" />
     <ClInclude Include="Folder.h" />
     <ClInclude Include="operation_handler.h" />
   </ItemGroup>

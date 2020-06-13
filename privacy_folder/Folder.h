@@ -4,10 +4,11 @@
 class Folder {
 
 private:
-	std::thread* encryption_thread;
+	std::thread encryption_thread;
+	std::string path;
 
 public: 
-	Folder(std::string path);
-
+	Folder(const std::string &path);
+	const std::string getPath();
 };
 
