@@ -6,11 +6,10 @@
 char* USER_HOME;
 
 int	main(int argc, char** argv) {
-	info("hh");
+	info("hh"); 		// Debug
 	init_user_home();
 	init_folder_list();
-	info("d");
-	if (1) return 1;
-	init_user_home();
+	info("d"); 		// Debug
+				// Debug // if (1) return 1;
 	if (parse_arguments(argc, argv)) return 0;
 }
